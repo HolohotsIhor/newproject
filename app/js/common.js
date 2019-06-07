@@ -1,18 +1,18 @@
 $(document).ready(function() {
-	/* Parallax 
-	$('.parallax-window').parallax({imageSrc: 'img/background.jpg'}); */
+    /* Parallax 
+    $('.parallax-window').parallax({imageSrc: 'img/background.jpg'}); */
 
-	/* Resize
-	function heightDetect(){
-		$(".parallax-window").css("height", $(window).height());	
-	}
-	heightDetect();
-	$(window).resize(function(){
-		heightDetect();
-	});
-	 */
-	 
-	 /* Burger */
+    /* Resize
+    function heightDetect(){
+        $(".parallax-window").css("height", $(window).height());    
+    }
+    heightDetect();
+    $(window).resize(function(){
+        heightDetect();
+    });
+     */
+     
+     /* Burger */
     $(".toggle_mnu").click(function() {
         $(".sandwich").toggleClass("active");
     });
