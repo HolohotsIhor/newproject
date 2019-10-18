@@ -5,7 +5,9 @@
 3.  Header
 4.  Form
 5.  About us
-6.  Uslugi  
+6.  Uslugi
+7.  Contacts  
+8.  Footer  
 
 */
 
@@ -15,7 +17,7 @@
 
 /* 2.  General styles */
 $padding-standart: 120px 0px;
-$padding-small: 80px 0px;
+$padding-small: 90px 0px;
 $typography-color-standart: 16px;
 $blue: rgb(15, 148, 219);
 $gold: #ffe5db;
@@ -34,6 +36,10 @@ body {
 section {
     padding: $padding-standart;
     text-align: center;
+
+    @media only screen and (max-device-width: 767px) {
+        padding: $padding-small;
+    }
 }
 
 .banner-section {
@@ -46,18 +52,44 @@ section {
     position: absolute;
     top: 0;
     color: $white;
+
+    @media only screen and (max-device-width: 767px) {
+        top: -20px;
+    }
+
+    @media only screen and (max-device-width: 545px) {
+        top: -45px;
+    }
 }
 
 .left-content {
     text-align: left;
     position: absolute;
     top: 0;
-    right: 40%;
     color: $white;
 }
 
 h2 {
     font-size: 50px;
+
+    @media only screen and (max-device-width: 1199px) {
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    @media only screen and (max-device-width: 991px) {
+        font-size: 27px;
+        line-height: 30px;
+    }
+
+    @media only screen and (max-device-width: 545px) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+img {
+    max-width: 100%;
 }
 
 a {
@@ -78,6 +110,11 @@ a {
     min-width: 150px;
     margin-top: 30px;
 
+    @media only screen and (max-device-width: 767px) {
+        margin-top: 10px;
+        float: left;
+    }
+
     &:hover {
         background-color: rgb(61, 155, 233);
         border-color: rgba(61, 155, 233, 1);
@@ -89,9 +126,6 @@ header {
     height: auto;
     background-color: $blue;
     padding-top: 20px;
-
-
-    @media only screen and (max-device-width: 575px) {}
 
     .top-bar {
         color: $white;
@@ -105,13 +139,38 @@ header {
             padding: 100px 100px 30px;
             width: 100%;
 
+            @media only screen and (max-device-width: 1199px) {
+                padding: 50px 30px 30px;
+            }
+
+            @media only screen and (max-device-width: 545px) {
+                padding: 0;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                text-align: center;
+            }
+
             .btn {
                 margin-top: 30px;
+
+                @media only screen and (max-device-width: 767px) {
+                    float: right;
+                    margin-top: 0;
+                }
+
+                @media only screen and (max-device-width: 545px) {
+                    margin-top: 15px;
+                    float: unset;
+                }
             }
 
             .banner__arrow-box {
                 text-align: center;
                 padding-top: 90px;
+
+                @media only screen and (max-device-width: 991px) {
+                    padding-top: 60px;
+                }
 
                 a {
 
@@ -124,24 +183,60 @@ header {
             .banner__image-box {
                 text-align: right;
 
+                @media only screen and (max-device-width: 991px) {
+                    max-width: 991px;
+                }
+
+                @media only screen and (max-device-width: 545px) {
+                    padding: 0 15px;
+                }
+
                 img {
                     max-width: 550px;
                     margin-top: 80px;
+
+                    @media only screen and (max-device-width: 767px) {
+                        max-width: 450px;
+                        margin-top: 160px;
+                    }
+
+                    @media only screen and (max-device-width: 545px) {
+                        max-width: 100%;
+                    }
                 }
             }
 
             .banner__content {
                 position: absolute;
+                
+                @media only screen and (max-device-width: 545px) {
+                    width: 100%;
+                }
+
 
                 h1 {
                     text-transform: initial;
                     font-size: 50px;
+
+                    @media only screen and (max-device-width: 991px) {
+                        font-size: 40px;
+                    }
+
+                    @media only screen and (max-device-width: 545px) {
+                        font-size: 27px;
+                    }
+
+                    br{
+
+                        @media only screen and (max-device-width: 545px) {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
 
         .top-bar__logo {
-            padding-top: 16px;
 
             img {
                 max-width: 100px;
@@ -153,6 +248,15 @@ header {
 
                 &:hover {
                     color: $green;
+                }
+
+                span {
+                    display: block;
+                    float: left;
+
+                    &:nth-child(2) {
+                        margin-top: 20px;
+                    }
                 }
             }
         }
@@ -870,22 +974,111 @@ textarea {
 .about-us {
     background-color: $green;
 
+    @media only screen and (max-device-width: 767px) {
+        padding-bottom: 50px;
+    }
+    
+
     .banner-section {
 
         .right-content {
             position: absolute;
             left: 50%;
+
+            @media only screen and (max-device-width: 767px) {
+                left: 40%;
+                text-align: left;
+            }
+
+            @media only screen and (max-device-width: 545px) {
+                left: 25%;
+            }
         }
     }
 }
 
 
 /* 6.  Uslugi */
-.uslugi{
+.uslugi {
     background-color: #141f33;
-    
-    .left-content{
+
+    @media only screen and (max-device-width: 767px) {
+        padding-top: 50px;
+    }
+
+    .left-content {
         top: 350px;
         left: 0;
+
+        @media only screen and (max-device-width: 767px) {
+            top: 330px;
+        }
+
+        @media only screen and (max-device-width: 450px) {
+            top: 280px;
+        }
+
+        @media only screen and (max-device-width: 365px) {
+            top: 230px;
+        }
+
+        @media only screen and (max-device-width: 340px) {
+            top: 210px;
+        }
+    }
+}
+
+/* 7.  Contacts */
+.contacts {
+    @media only screen and (max-device-width: 767px) {
+        padding: 50px 0;
+    }
+
+    .contact-image {
+        text-align: left;
+    }
+
+    .text-box {
+
+        p {
+            color: #1B1B1E;
+            font-size: 38px;
+            line-height: 40px;
+            text-align: left;
+            padding-top: 110px;
+
+            @media only screen and (max-device-width: 991px) {
+                font-size: 27px;
+                line-height: 30px;
+                padding-top: 50px;
+            }
+
+            @media only screen and (max-device-width: 767px) {
+                text-align: center;
+                font-size: 23px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+
+/* 8.  Footer */
+footer {
+    background-color: #000;
+    padding: 25px 0 20px 0;
+    color: $white;
+
+    @media only screen and (max-device-width: 767px) {
+        text-align: center;
+    }
+
+    p {
+        font-weight: bold;
+        margin-bottom: 0;
+
+        span {
+            color: $blue;
+        }
     }
 }

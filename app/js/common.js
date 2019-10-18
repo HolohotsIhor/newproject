@@ -1,15 +1,5 @@
 $(document).ready(function() {
-    /* Resize
-    function heightDetect(){
-        $("header").css("height", $(window).height());    
-    }
-    heightDetect();
-    $(window).resize(function(){
-        heightDetect();
-    }); */
-     
-     
-     /* Burger */
+    /* Burger */
     $(".toggle_mnu").click(function() {
         $(".sandwich").toggleClass("active");
     });
@@ -31,5 +21,32 @@ $(document).ready(function() {
             $(".top_mnu").fadeIn(600);
             $(".top_mnu li a").addClass("fadeInUp animated");
         };
+    });
+
+    $('.mov').each(function() {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 600) {
+            $(this).addClass('fadeIn animated');
+            $(this).css('opacity', '1');
+        }
+    });
+
+    $('.mov-left').each(function() {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 600) {
+            $(this).addClass('fadeInLeft animated');
+            $(this).css('opacity', '1');
+        }
+    });
+
+    $('.mov-right').each(function() {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 600) {
+            $(this).addClass('fadeInRight animated');
+            $(this).css('opacity', '1');
+        }
     });
 });

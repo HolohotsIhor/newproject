@@ -5,7 +5,9 @@
 3.  Header
 4.  Form
 5.  About us
-6.  Uslugi  
+6.  Uslugi
+7.  Contacts  
+8.  Footer  
 
 */
 /* 1.  Fonts including */
@@ -23,6 +25,9 @@ body {
 section {
   padding: 120px 0px;
   text-align: center; }
+  @media only screen and (max-device-width: 767px) {
+    section {
+      padding: 90px 0px; } }
 
 .banner-section {
   position: relative;
@@ -33,16 +38,36 @@ section {
   position: absolute;
   top: 0;
   color: #fff; }
+  @media only screen and (max-device-width: 767px) {
+    .right-content {
+      top: -20px; } }
+  @media only screen and (max-device-width: 545px) {
+    .right-content {
+      top: -45px; } }
 
 .left-content {
   text-align: left;
   position: absolute;
   top: 0;
-  right: 40%;
   color: #fff; }
 
 h2 {
   font-size: 50px; }
+  @media only screen and (max-device-width: 1199px) {
+    h2 {
+      font-size: 42px;
+      line-height: 42px; } }
+  @media only screen and (max-device-width: 991px) {
+    h2 {
+      font-size: 27px;
+      line-height: 30px; } }
+  @media only screen and (max-device-width: 545px) {
+    h2 {
+      font-size: 20px;
+      line-height: 25px; } }
+
+img {
+  max-width: 100%; }
 
 a {
   text-decoration: none;
@@ -60,6 +85,10 @@ a {
   transition: .3s;
   min-width: 150px;
   margin-top: 30px; }
+  @media only screen and (max-device-width: 767px) {
+    .btn {
+      margin-top: 10px;
+      float: left; } }
   .btn:hover {
     background-color: #3d9be9;
     border-color: #3d9be9; }
@@ -80,34 +109,82 @@ header {
       color: #fff;
       padding: 100px 100px 30px;
       width: 100%; }
+      @media only screen and (max-device-width: 1199px) {
+        header .top-bar .banner {
+          padding: 50px 30px 30px; } }
+      @media only screen and (max-device-width: 545px) {
+        header .top-bar .banner {
+          padding: 0;
+          padding-top: 35px;
+          padding-bottom: 35px;
+          text-align: center; } }
       header .top-bar .banner .btn {
         margin-top: 30px; }
+        @media only screen and (max-device-width: 767px) {
+          header .top-bar .banner .btn {
+            float: right;
+            margin-top: 0; } }
+        @media only screen and (max-device-width: 545px) {
+          header .top-bar .banner .btn {
+            margin-top: 15px;
+            float: unset; } }
       header .top-bar .banner .banner__arrow-box {
         text-align: center;
         padding-top: 90px; }
+        @media only screen and (max-device-width: 991px) {
+          header .top-bar .banner .banner__arrow-box {
+            padding-top: 60px; } }
         header .top-bar .banner .banner__arrow-box a img {
           width: 33px; }
       header .top-bar .banner .banner__image-box {
         text-align: right; }
+        @media only screen and (max-device-width: 991px) {
+          header .top-bar .banner .banner__image-box {
+            max-width: 991px; } }
+        @media only screen and (max-device-width: 545px) {
+          header .top-bar .banner .banner__image-box {
+            padding: 0 15px; } }
         header .top-bar .banner .banner__image-box img {
           max-width: 550px;
           margin-top: 80px; }
+          @media only screen and (max-device-width: 767px) {
+            header .top-bar .banner .banner__image-box img {
+              max-width: 450px;
+              margin-top: 160px; } }
+          @media only screen and (max-device-width: 545px) {
+            header .top-bar .banner .banner__image-box img {
+              max-width: 100%; } }
       header .top-bar .banner .banner__content {
         position: absolute; }
+        @media only screen and (max-device-width: 545px) {
+          header .top-bar .banner .banner__content {
+            width: 100%; } }
         header .top-bar .banner .banner__content h1 {
           text-transform: initial;
           font-size: 50px; }
-    header .top-bar .top-bar__logo {
-      padding-top: 16px; }
-      header .top-bar .top-bar__logo img {
-        max-width: 100px;
-        margin-right: 7px; }
-      header .top-bar .top-bar__logo a {
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s; }
-        header .top-bar .top-bar__logo a:hover {
-          color: #2ecc71; }
+          @media only screen and (max-device-width: 991px) {
+            header .top-bar .banner .banner__content h1 {
+              font-size: 40px; } }
+          @media only screen and (max-device-width: 545px) {
+            header .top-bar .banner .banner__content h1 {
+              font-size: 27px; } }
+          @media only screen and (max-device-width: 545px) {
+            header .top-bar .banner .banner__content h1 br {
+              display: none; } }
+    header .top-bar .top-bar__logo img {
+      max-width: 100px;
+      margin-right: 7px; }
+    header .top-bar .top-bar__logo a {
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      header .top-bar .top-bar__logo a:hover {
+        color: #2ecc71; }
+      header .top-bar .top-bar__logo a span {
+        display: block;
+        float: left; }
+        header .top-bar .top-bar__logo a span:nth-child(2) {
+          margin-top: 20px; }
     header .top-bar .top-bar__nav-box .contacts {
       font-family: 'Open Sans', sans-serif;
       font-weight: 500;
@@ -713,13 +790,77 @@ textarea {
 /* 5.  About us */
 .about-us {
   background-color: #2ecc71; }
+  @media only screen and (max-device-width: 767px) {
+    .about-us {
+      padding-bottom: 50px; } }
   .about-us .banner-section .right-content {
     position: absolute;
     left: 50%; }
+    @media only screen and (max-device-width: 767px) {
+      .about-us .banner-section .right-content {
+        left: 40%;
+        text-align: left; } }
+    @media only screen and (max-device-width: 545px) {
+      .about-us .banner-section .right-content {
+        left: 25%; } }
 
 /* 6.  Uslugi */
 .uslugi {
   background-color: #141f33; }
+  @media only screen and (max-device-width: 767px) {
+    .uslugi {
+      padding-top: 50px; } }
   .uslugi .left-content {
     top: 350px;
     left: 0; }
+    @media only screen and (max-device-width: 767px) {
+      .uslugi .left-content {
+        top: 330px; } }
+    @media only screen and (max-device-width: 450px) {
+      .uslugi .left-content {
+        top: 280px; } }
+    @media only screen and (max-device-width: 365px) {
+      .uslugi .left-content {
+        top: 230px; } }
+    @media only screen and (max-device-width: 340px) {
+      .uslugi .left-content {
+        top: 210px; } }
+
+/* 7.  Contacts */
+@media only screen and (max-device-width: 767px) {
+  .contacts {
+    padding: 50px 0; } }
+
+.contacts .contact-image {
+  text-align: left; }
+
+.contacts .text-box p {
+  color: #1B1B1E;
+  font-size: 38px;
+  line-height: 40px;
+  text-align: left;
+  padding-top: 110px; }
+  @media only screen and (max-device-width: 991px) {
+    .contacts .text-box p {
+      font-size: 27px;
+      line-height: 30px;
+      padding-top: 50px; } }
+  @media only screen and (max-device-width: 767px) {
+    .contacts .text-box p {
+      text-align: center;
+      font-size: 23px;
+      line-height: 30px; } }
+
+/* 8.  Footer */
+footer {
+  background-color: #000;
+  padding: 25px 0 20px 0;
+  color: #fff; }
+  @media only screen and (max-device-width: 767px) {
+    footer {
+      text-align: center; } }
+  footer p {
+    font-weight: bold;
+    margin-bottom: 0; }
+    footer p span {
+      color: #0f94db; }
