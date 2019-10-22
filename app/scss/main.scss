@@ -614,10 +614,9 @@ textarea {
     border-radius: 5px;
 }
 
-.wpcf7#wpcf7-f31-p16-o1 {
+.wpcf7 {
     width: 100%;
 }
-
 
 .breadcrambs{
     background: url(../img/slider-1.jpg);
@@ -628,41 +627,41 @@ textarea {
 
 }
 
-.wpcf7#wpcf7-f31-p16-o1 label {
+.wpcf7 label {
     width: 100%;
     margin-bottom: 0;
 }
 
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-validation-errors {
+.wpcf7 .wpcf7-validation-errors {
     display: none !important;
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form {
+.wpcf7 .wpcf7-form {
     width: 100%;
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form .wpcf7-not-valid-tip {
+.wpcf7 .wpcf7-form .wpcf7-not-valid-tip {
     line-height: 35px;
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form .menu-550 .wpcf7-not-valid-tip {
+.wpcf7 .wpcf7-form .menu-550 .wpcf7-not-valid-tip {
     line-height: 18px;
     padding-top: 12px;
 }
 
 @media only screen and (max-device-width: 575px) {
-    .wpcf7#wpcf7-f31-p16-o1 .wpcf7-form .menu-550 .wpcf7-not-valid-tip {
+    .wpcf7 .wpcf7-form .menu-550 .wpcf7-not-valid-tip {
         line-height: 14px;
     }
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form .wpcf7-validation-errors,
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form .wpcf7-mail-sent-ok {
+.wpcf7 .wpcf7-form .wpcf7-validation-errors,
+.wpcf7 .wpcf7-form .wpcf7-mail-sent-ok {
     margin-top: 60px;
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form .help-develop {
+.wpcf7 .wpcf7-form .help-develop {
     float: left;
     display: block;
     line-height: 60px;
@@ -670,12 +669,12 @@ textarea {
 }
 
 @media only screen and (max-device-width: 575px) {
-    .wpcf7#wpcf7-f31-p16-o1 .wpcf7-form .help-develop {
+    .wpcf7 .wpcf7-form .help-develop {
         line-height: 40px;
     }
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form span.wpcf7-form-control-wrap {
+.wpcf7 .wpcf7-form span.wpcf7-form-control-wrap {
     display: block;
     width: 100%;
     float: left;
@@ -683,63 +682,63 @@ textarea {
 }
 
 @media only screen and (max-device-width: 575px) {
-    .wpcf7#wpcf7-f31-p16-o1 .wpcf7-form span.wpcf7-form-control-wrap {
+    .wpcf7 .wpcf7-form span.wpcf7-form-control-wrap {
         width: 100%;
         text-align: left;
     }
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form .wpcf7-form-control-wrap.menu-valute {
+.wpcf7 .wpcf7-form .wpcf7-form-control-wrap.menu-valute {
     width: auto;
 }
 
 @media only screen and (max-device-width: 575px) {
-    .wpcf7#wpcf7-f31-p16-o1 .wpcf7-form .wpcf7-form-control-wrap.menu-valute {
+    .wpcf7 .wpcf7-form .wpcf7-form-control-wrap.menu-valute {
         width: 100%;
         text-align: left;
     }
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form span.textarea-text {
+.wpcf7 .wpcf7-form span.textarea-text {
     width: 100%;
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p input {
+.wpcf7 .wpcf7-form p input {
     width: 100%;
     float: left;
     padding: 0.75rem;
     border: solid 1px #eee;
 }
 @media only screen and (max-device-width: 575px) {
-    .wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p input {
+    .wpcf7 .wpcf7-form p input {
         width: 100%;
     }
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p select {
+.wpcf7 .wpcf7-form p select {
     height: 40px;
     margin-top: 10px;
     float: left;
 }
 
 @media only screen and (max-device-width: 575px) {
-    .wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p select {
+    .wpcf7 .wpcf7-form p select {
         margin-top: 0px;
     }
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p .wpcf7-email {
+.wpcf7 .wpcf7-form p .wpcf7-email {
     margin-left: 0;
 }
 
 @media only screen and (max-device-width: 575px) {
-    .wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p .wpcf7-email {
+    .wpcf7 .wpcf7-form p .wpcf7-email {
         margin-left: 0;
         margin-top: 0;
     }
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p .wpcf7-textarea {
+.wpcf7 .wpcf7-form p .wpcf7-textarea {
     margin-top: 2%;
     padding: 0.75rem;
     border: solid 1px #eee;
@@ -747,17 +746,17 @@ textarea {
     margin-bottom: 0;
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p .wpcf7-textarea,
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p .wpcf7-input {
+.wpcf7 .wpcf7-form p .wpcf7-textarea,
+.wpcf7 .wpcf7-form p .wpcf7-input {
     color: #888;
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p input:focus,
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p textarea:focus {
+.wpcf7 .wpcf7-form p input:focus,
+.wpcf7 .wpcf7-form p textarea:focus {
     outline-color: $white;
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p .wpcf7-submit {
+.wpcf7 .wpcf7-form p .wpcf7-submit {
     display: block;
     height: 60px;
     width: 230px;
@@ -785,22 +784,22 @@ textarea {
     }
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form p .wpcf7-submit:hover {
+.wpcf7 .wpcf7-form p .wpcf7-submit:hover {
     box-shadow: none;
     box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form span.textarea-comment {
+.wpcf7 .wpcf7-form span.textarea-comment {
     width: 100%;
 }
 
-.wpcf7#wpcf7-f31-p16-o1 .wpcf7-form .menu-valute .wpcf7-not-valid-tip {
+.wpcf7 .wpcf7-form .menu-valute .wpcf7-not-valid-tip {
     line-height: 18px;
     padding-top: 12px;
 }
 
 @media only screen and (max-device-width: 575px) {
-    .wpcf7#wpcf7-f31-p16-o1 .wpcf7-form .menu-valute .wpcf7-not-valid-tip {
+    .wpcf7 .wpcf7-form .menu-valute .wpcf7-not-valid-tip {
         line-height: 14px;
     }
 }
@@ -969,116 +968,3 @@ textarea {
 }
 */
 
-
-/* 5.  About us */
-.about-us {
-    background-color: $green;
-
-    @media only screen and (max-device-width: 767px) {
-        padding-bottom: 50px;
-    }
-    
-
-    .banner-section {
-
-        .right-content {
-            position: absolute;
-            left: 50%;
-
-            @media only screen and (max-device-width: 767px) {
-                left: 40%;
-                text-align: left;
-            }
-
-            @media only screen and (max-device-width: 545px) {
-                left: 25%;
-            }
-        }
-    }
-}
-
-
-/* 6.  Uslugi */
-.uslugi {
-    background-color: #141f33;
-
-    @media only screen and (max-device-width: 767px) {
-        padding-top: 50px;
-    }
-
-    .left-content {
-        top: 350px;
-        left: 0;
-
-        @media only screen and (max-device-width: 767px) {
-            top: 330px;
-        }
-
-        @media only screen and (max-device-width: 450px) {
-            top: 280px;
-        }
-
-        @media only screen and (max-device-width: 365px) {
-            top: 230px;
-        }
-
-        @media only screen and (max-device-width: 340px) {
-            top: 210px;
-        }
-    }
-}
-
-/* 7.  Contacts */
-.contacts {
-    @media only screen and (max-device-width: 767px) {
-        padding: 50px 0;
-    }
-
-    .contact-image {
-        text-align: left;
-    }
-
-    .text-box {
-
-        p {
-            color: #1B1B1E;
-            font-size: 38px;
-            line-height: 40px;
-            text-align: left;
-            padding-top: 110px;
-
-            @media only screen and (max-device-width: 991px) {
-                font-size: 27px;
-                line-height: 30px;
-                padding-top: 50px;
-            }
-
-            @media only screen and (max-device-width: 767px) {
-                text-align: center;
-                font-size: 23px;
-                line-height: 30px;
-            }
-        }
-    }
-}
-
-
-/* 8.  Footer */
-footer {
-    background-color: #000;
-    padding: 25px 0 20px 0;
-    color: $white;
-
-    @media only screen and (max-device-width: 767px) {
-        text-align: center;
-    }
-
-    p {
-        font-weight: bold;
-        margin-bottom: 0;
-
-        span {
-            color: $blue;
-        }
-    }
-}
