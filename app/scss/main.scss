@@ -10,7 +10,6 @@
 
 /* 1.  Fonts including */
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
 /* 2.  General styles */
 $padding-standart: 120px 0px;
@@ -308,7 +307,7 @@ a {
                 a {
                     color: $white;
                     transition: .3s;
-                    font-family: 'Open Sans', sans-serif;
+                    font-family: 'Roboto', sans-serif;
 
                     @media (max-device-width: 575px) {
                         font-size: 12px;
